@@ -204,7 +204,7 @@ body{
 	width: 110%;
 	height: calc(110vh - 65px);
 	background-color: var(--black-clr);
-	background-image: url('https://github.com/Cranberry101/Portfolio/blob/main/FinalnaPortfolio/Images/homepic.jpg');
+	background-image: url('FinalnaPortfolio/Images/homepic.jpg');
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: 900px;
