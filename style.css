@@ -202,7 +202,7 @@ body{
 }
 .homeSection .homeBody{
 	width: 110%;
-	height: calc(110vh - 65px);
+	height: 90vh;
 	background-color: var(--black-clr);
 	background-image: url('FinalnaPortfolio/Images/homepic.jpg');
 	background-repeat: no-repeat;
