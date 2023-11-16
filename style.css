@@ -31,7 +31,7 @@ body{
 	position: absolute;
 	top:10%;
 	right: 0px;
-	width: 675px;
+	width: 725px;
 	height: 100%;
 	background: transparent;;
 	transition: 1s;
@@ -39,7 +39,7 @@ body{
   
   .home-imgHover:hover {
 	background: #031225;
-	opacity: .6;
+	opacity: .7;
   }
   
   .home-imgHover::after {
