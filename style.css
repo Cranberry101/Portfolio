@@ -83,14 +83,6 @@ body{
 	padding: 0px 40px;
 	height: 65px;
 }
-.homeSection .primaryMenu2{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0px 40px;
-	height: 65px;
-}
 .homeSection .stickyMenuBar{
 	position: fixed;
 	max-width: 1568px;
@@ -115,41 +107,17 @@ body{
 	font-weight: 600;
 	text-transform: uppercase;
 }
-.homeSection .primaryMenu2 .logo a{
-	text-decoration: none;
-	color: var(--primary-clr);
-	font-size: 26px;
-	font-weight: 600;
-	text-transform: uppercase;
-}
 .homeSection .primaryMenu ul{
-	list-style: none;
-}
-.homeSection .primaryMenu2 ul{
 	list-style: none;
 }
 .homeSection .primaryMenu ul li{
 	display: inline-block;
 	padding: 0px 16px;
 }
-.homeSection .primaryMenu2 ul li{
-	display: inline-block;
-	padding: 0px 16px;
-}
 .homeSection .primaryMenu ul li:nth-child(7){
 	padding-right: 0px;
 }
-.homeSection .primaryMenu2 ul li:nth-child(7){
-	padding-right: 0px;
-}
 .homeSection .primaryMenu ul li a{
-	position: relative;
-	display: block;
-	text-decoration: none;
-	font-size: var(--text-fontSize);
-	color: var(--primary-heading-clr);
-}
-.homeSection .primaryMenu2 ul li a{
 	position: relative;
 	display: block;
 	text-decoration: none;
@@ -168,25 +136,9 @@ body{
 	transition: 0.4s;
 	transform: scale(0);
 }
-.homeSection .primaryMenu2 ul li a:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background-color: var(--primary-clr);
-	border-radius: 5px;
-	top: 110%;
-	left: 0;
-	transition: 0.4s;
-	transform: scale(0);
-}
 .homeSection .primaryMenu ul li a:hover::after{
 	transform: scale(1);
 }
-.homeSection .primaryMenu2 ul li a:hover::after{
-	transform: scale(1);
-}
-
 .home-sci{
 	position: absolute;
 	bottom: 40px;
