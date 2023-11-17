@@ -75,70 +75,51 @@ body{
 	width: 100%;
 	position: relative;
 }
-.homeSection .primaryMenu{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0px 40px;
-	height: 65px;
-}
-.homeSection .stickyMenuBar{
-	position: fixed;
-	max-width: 1568px;
-	top: 0;
-	background-color: var(--bg-clr-one);
-	box-shadow: 0px 2px 3px 0px #000;
-	z-index: 100;
-	animation: navbarAnim 0.4s linear;
-}
-@keyframes navbarAnim{
-	0%{
-		transform: translateY(-100px);
-	}
-	100%{
-		transform: translateY(0px);
-	}
-}
-.homeSection .primaryMenu .logo a{
-	text-decoration: none;
-	color: var(--primary-clr);
-	font-size: 26px;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-.homeSection .primaryMenu ul{
-	list-style: none;
-}
-.homeSection .primaryMenu ul li{
-	display: inline-block;
-	padding: 0px 16px;
-}
-.homeSection .primaryMenu ul li:nth-child(7){
-	padding-right: 0px;
-}
-.homeSection .primaryMenu ul li a{
-	position: relative;
-	display: block;
-	text-decoration: none;
-	font-size: var(--text-fontSize);
-	color: var(--primary-heading-clr);
-}
-.homeSection .primaryMenu ul li a:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background-color: var(--primary-clr);
-	border-radius: 5px;
-	top: 110%;
-	left: 0;
-	transition: 0.4s;
-	transform: scale(0);
-}
-.homeSection .primaryMenu ul li a:hover::after{
-	transform: scale(1);
-}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  } 
+  
+  .logo {
+    position: relative;
+    font-size: 25px;
+    color:#ededed;
+    text-decoration : none;
+    font-weight : 600;
+  }
+  
+  .logo::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+  }
+  
+  .navbar a {
+    font-size: 18px;
+    color:#ededed;
+    text-decoration : none;
+    font-weight : 500;
+    margin-left: 35px;
+    transition : .3s;
+  } 
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #cc22e2;
+  }
 .home-sci{
 	position: absolute;
 	bottom: 40px;
@@ -317,7 +298,7 @@ body{
 
 .aboutSection{
 	width: 100%;
-	height: 100vh;
+	height: 140vh;
 	padding: 75px 8% 60px;
 	background-color: var(--bg-clr-one);
 }
@@ -478,190 +459,11 @@ body{
 /*   *******   About Section Styling Ends   *******   */
 
 
-/*  *******   Services Section Styling Starts   *******  */
-
-.servicesSection{
-	width: 100%;
-	padding: 75px 8% 60px;
-	background-color: var(--bg-clr-two);
-}
-.servicesSection .serviceTitle{
-	max-width: 700px;
-	margin: 0px auto 45px;
-	text-align: center;
-}
-.servicesSection .serviceTitle h1{
-	position: relative;
-	display: inline-block;
-	font-size: var(--large-heading);
-	color: var(--primary-heading-clr);
-	text-transform: uppercase;
-	margin-bottom: 30px;
-}
-.servicesSection .serviceTitle h1::before{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	top: 120%;
-	left: 0;
-	background-color: var(--secondary-heading-clr);
-}
-.servicesSection .serviceTitle h1::after{
-	content: '';
-	position: absolute;
-	width: 40%;
-	height: 3px;
-	top: calc(120% - 1px);
-	left: 0;
-	background-color: var(--primary-clr);
-}
-.servicesSection .serviceTitle p{
-	font-size: var(--text-fontSize);
-	color: var(--secondary-heading-clr);
-}
-.servicesSection .serviceContents{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.serviceContents .serviceBox{
-	flex-basis: 32%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 25px 20px 35px;
-	background-color: var(--bg-clr-one);
-	border: 1px solid #111111;
-	margin-bottom: 20px;
-	cursor: pointer;
-	transition: transform 0.4s,
-	            box-shadow 0.4s;
-}
-.serviceContents .serviceBox:hover{
-	transform: translateY(-2px);
-	box-shadow: 0px 3px 18px 0px #000;
-}
-.serviceContents .serviceBox i{
-	font-size: 30px;
-	color: var(--primary-clr);
-}
-.serviceContents .serviceBox h2{
-	padding: 15px 0px 10px;
-	color: var(--secondary-heading-clr);
-	font-size: 20px;
-}
-.serviceContents .serviceBox p{
-	font-size: var(--text-fontSize);
-	color: var(--text-clr);
-	line-height: 1.3;
-}
-
-/*  *******   Services Section Styling Ends   *******  */
-
-/*  *******   Resume Section Styling Starts   *******  */
-
-.resumeSection{
-	width: 100%;
-	padding: 75px 8% 60px;
-    background-color: var(--bg-clr-one);
-}
-.resumeSection .resumeTitle{
-	max-width: 700px;
-	margin: 0px auto 45px;
-	text-align: center;
-}
-.resumeSection .resumeTitle h1{
-	position: relative;
-	display: inline-block;
-	font-size: var(--large-heading);
-	color: var(--primary-heading-clr);
-	text-transform: uppercase;
-	margin-bottom: 30px;
-}
-.resumeSection .resumeTitle h1::before{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	top: 120%;
-	left: 0;
-	background-color: var(--secondary-heading-clr);
-}
-.resumeSection .resumeTitle h1::after{
-	content: '';
-	position: absolute;
-	width: 40%;
-	height: 3px;
-	top: calc(120% - 1px);
-	left: 0;
-	background-color: var(--primary-clr);
-}
-.resumeSection .resumeTitle p{
-	font-size: var(--text-fontSize);
-	color: var(--secondary-heading-clr);
-}
-.resumeSection .resumeContentsRow{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 20px;
-}
-.resumeContentsRow .resumeEvenColumn{
-	background-color: var(--bg-clr-two);
-	padding: 20px 15px;
-	border-radius: 10px;
-	border: 1px solid #151515;
-}
-.resumeContentsRow .resumeEvenColumn .subTitle{
-	font-size: 20px;
-	color: var(--primary-heading-clr);
-	padding: 0px 0px 20px 20px;
-	text-transform: uppercase;
-}
-.resumeEvenColumn .resumeContents .box{
-	position: relative;
-	padding: 0px 15px 25px 20px;
-	background-color: var(--bg-clr-two);
-	border-left: 2px solid var(--text-clr);
-}
-.resumeEvenColumn .resumeContents .box:nth-child(3){
-	padding-bottom: 0px;
-}
-.resumeEvenColumn .resumeContents .box::before{
-	content: '';
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	left: 0;
-	top: 0;
-	transform: translate(-50%, -10%);
-	background-color: var(--primary-clr);
-	border: 2px solid var(--bg-clr-two);
-}
-.resumeEvenColumn .resumeContents .box h4{
-	position: relative;
-	color: var(--primary-clr);
-}
-.resumeEvenColumn .resumeContents .box h3{
-	font-size: 19px;
-	padding: 10px 0px 6px;
-	color: var(--secondary-heading-clr);
-}
-.resumeEvenColumn .resumeContents .box p{
-	line-height: 1.2;
-	color: var(--text-clr);
-	font-size: var(--text-fontSize);
-}
-
-/*  *******   Resume Section Styling Ends   *******  */
-
 /*  *******   Portfolio Section Styling Starts   *******  */
 
 .portfolioSection{
 	width: 100%;
+	height: 140vh;
 	padding: 75px 8% 60px;
 	background-color: var(--bg-clr-two);
 }
