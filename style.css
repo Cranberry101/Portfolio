@@ -56,7 +56,7 @@ body{
 	}
 
 .websiteContainer{
-	max-width: 1568px;
+	max-width: 100%;
 	margin: 0px auto;
 	background-color: var(--black-clr);
 	color: var(--primary-heading-clr);
