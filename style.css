@@ -325,9 +325,9 @@ body{
 }
 .aboutContents .aboutImage img{
 	width: 95%;
-	height: 115%;
+	height: 125%;
 	left: 5%;
-	bottom:0;
+	bottom:5%;
 	object-fit: cover;
 	display: block;
 	position: relative;
@@ -338,6 +338,7 @@ body{
 	content: '';
 	width: 98%;
 	height: 115%;
+	bottom:5%;
 	outline: 3px solid var(--primary-clr);
 	top: 5%;
 	left: 15px;
