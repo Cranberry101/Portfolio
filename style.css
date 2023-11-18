@@ -31,7 +31,7 @@ body{
 	position: absolute;
 	top:10%;
 	right: 0px;
-	width: 725px;
+	width: 855px;
 	height: 100%;
 	background: transparent;;
 	transition: 1s;
@@ -194,12 +194,12 @@ body{
 	transition: 0.4s cubic-bezier(1, 0.2, 0.2, 1);
 }
 .homeSection .homeBody{
-	width: 110%;
+	width: 130%;
 	height: 90vh;
 	background-color: var(--black-clr);
 	background-image: url('FinalnaPortfolio/Images/homepic.jpg');
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: center;
 	background-size: 900px;
 }
 .homeSection .homeBody .homeInfoText{
