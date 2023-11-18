@@ -325,8 +325,8 @@ body{
 }
 .aboutContents .aboutImage img{
 	width: 100%;
-	bottom: 5%:
 	height: 115%;
+	bottom: 5%:
 	object-fit: cover;
 	display: block;
 	position: relative;
