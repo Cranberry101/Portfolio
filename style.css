@@ -540,7 +540,7 @@ body{
 .portfolioContents .portfolioGallery{
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 2fr);
 	grid-gap: 10px;
 }
 .portfolioContents .portfolioGallery .card{
