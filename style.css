@@ -369,7 +369,7 @@ body{
 	letter-spacing: 1px;
 }
 .aboutContents .aboutInfo p{
-	color: var(--text-clr);
+	color: #6a9bcb;
 	font-size: var(--text-fontSize);
 	line-height: 1.2;
 	text-align: justify;
@@ -388,7 +388,7 @@ body{
 	grid-template-columns: 1fr 1fr;
 }
 .aboutPersonalInfo div span{
-	color: var(--text-clr);
+	color: #6acb8d);
 	letter-spacing: 1px;
 }
 .aboutContents .aboutInfo button{
